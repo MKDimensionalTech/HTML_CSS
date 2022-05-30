@@ -1,0 +1,37 @@
+@charset "utf-8";
+body{
+    background-color:#8CB7CA ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h1#Principal {
+    color:#1E3C7B;
+    font-size: 45px;
+    text-align: center;
+    background-color:#E4E3E1;
+}
+h1{
+    color:#2B2A30;
+    font-size: 35px;
+    text-align: justify;
+    text-decoration: underline;
+}
+h2{
+    color: #f0bc1f;
+    font-size: 25px;
+    text-align: center;
+}
+h2.basico{
+    color: #8C8CA6;
+
+}
+.intermediario{
+    color: #0A0928;
+}
+.avançado{
+    color: #F66111;
+}
+p{
+    color:#982030;
+    text-align: justify;
+    text-indent: 20px;
+}
