@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>colgroup</title>
+    <style>
+        body{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        table{
+            border-collapse: collapse;
+            position: relative;
+        }
+        th, td{
+            border: 1px solid black;
+            padding: 20px;
+            text-align: center;
+        }
+        thead{
+            background-color: yellow;
+            color: black;
+        }
+        thead > tr > th{
+            position:sticky;
+            top: -1px;
+        }
+        caption{
+            font-size: 1.3em;
+            font-style: oblique;
+            padding: 10px;
+            background-color: azure;
+            font-weight: bolder;
+        }
+        .primeira{
+            background-color: blue;
+        }
+        .segunda{
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <table id="p">
+        <colgroup>
+            <col class="primeira">
+            <col class="segunda">
+        </colgroup>
+        <caption>População da Unidades Federativas</caption>
+        <thead id="pr">
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td>45 780 765</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais
+                </td>
+                <td>34 980 657</td>
+            </tr>
+            <tr>
+                <td>
+                    Rio de janeiro
+                </td>
+                <td>
+                    56 775 325
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <th scope="row">Total de habitantes</th>
+            <td><strong>00000</strong></td>
+        </tfoot>
+    </table>
+</body>
+</html>

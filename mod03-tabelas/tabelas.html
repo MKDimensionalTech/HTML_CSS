@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        tbody > tr:nth-child(2n){
+            background-color: aqua;
+        }
+        tbody > tr:nth-child(odd){
+            background-color: rgba(179, 116, 237, 0.888);
+        }
+        table{
+            border-collapse: collapse;
+            position: relative;
+        }
+        tr.peq >td{
+            border: 1px solid black;
+            padding: 8px;
+        }
+        table#1 > th, td{
+            border: 1px solid black;
+            padding: 20px;
+            text-align: center;
+        }
+        thead{
+            background-color: yellow;
+            color: black;
+        }
+        thead > tr > th{
+            position:sticky;
+            top: -1px;
+
+        }
+        tfoot{
+            background-color: brown;
+        }
+        caption{
+            font-size: 1.3em;
+            font-style: oblique;
+            padding: 10px;
+            background-color: azure;
+            font-weight: bolder;
+        }
+        .primeira{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Minha primeira tabela</h1>
+    <table>
+        <tr class="peq">
+           <td>A1</td> 
+           <td colspan="2">B1</td>
+        </tr>
+        <tr class="peq">
+           <td rowspan="3">A2</td> 
+           <td>B2</td>
+           <td>C2</td>
+        </tr>
+        <tr class="peq">
+           <td>B3</td>
+           <td>C3</td>
+        </tr>
+        <tr class="peq"> 
+            <td>B4</td>
+            <td>C4</td>
+        </tr>
+    </table>
+    <h1>Tabelas Grandes</h1>
+    <table>
+        <caption>População da Unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td>45 780 765</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais
+                </td>
+                <td>34 980 657</td>
+            </tr>
+            <tr>
+                <td>
+                    Rio de janeiro
+                </td>
+                <td>
+                    56 775 325
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <th scope="row">Total de habitantes</th>
+            <td><strong>00000</strong></td>
+        </tfoot>
+    </table>
+    <table id="p">
+        <colgroup>
+            <col class="primeira">
+            <col class="segunda">
+        </colgroup>
+        <caption>População da Unidades Federativas</caption>
+        <thead id="pr">
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td>45 780 765</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais
+                </td>
+                <td>34 980 657</td>
+            </tr>
+            <tr>
+                <td>
+                    Rio de janeiro
+                </td>
+                <td>
+                    56 775 325
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <th scope="row">Total de habitantes</th>
+            <td><strong>00000</strong></td>
+        </tfoot>
+    </table>
+</body>
+</html>
